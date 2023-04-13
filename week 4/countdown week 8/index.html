@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Countdown tot zomervakantie</title>
+</head>
+<body>
+	<h1>Countdown tot zomervakantie</h1>
+	<div id="countdown"></div>
+
+	<script>
+		// bereken de tijd tussen nu en het einde van de zomervakantie (1 september 2023)
+		var now = new Date();
+		var end = new Date(2023, 8, 1); // de maand is zero-based (januari = 0, februari = 1, enz.)
+		var timeDiff = end.getTime() - now.getTime();
+
+		// bereken de verschillende tijdseenheden (dagen, uren, minuten, seconden)
+		var days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+		var hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		var minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+		var seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+		// toon de countdown in de HTML-pagina
+		var countdownElement = document.getElementById("countdown");
+		countdownElement.innerHTML = "Nog " + days + " dagen, " + hours + " uur, " + minutes + " minuten en " + seconds + " seconden tot de zomervakantie.";
+		
+		// update de countdown elke seconde
+		setInterval(function() {
