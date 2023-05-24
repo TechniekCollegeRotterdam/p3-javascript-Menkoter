@@ -1,0 +1,33 @@
+[
+    {
+      "name": "Persoon 1",
+      "age": 25,
+      "image": "lachen.png"
+    },
+    {
+      "name": "Persoon 2",
+      "age": 30,
+      "image":  "lachen.png"
+    },
+    {
+      "name": "Persoon 3",
+      "age": 28,
+      "image":  "lachen.png"
+    },
+    {
+      "name": "Persoon 4",
+      "age": 35,
+      "image":  "lachen.png"
+    },
+    {
+      "name": "Persoon 5",
+      "age": 27,
+      "image":  "lachen.png"
+    },
+    {
+      "name": "Persoon 6",
+      "age": 32,
+      "image":  "lachen.png"
+    }
+  ]
+  
