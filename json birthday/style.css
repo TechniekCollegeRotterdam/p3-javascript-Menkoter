@@ -1,0 +1,21 @@
+body {background-color: rgba(151, 255, 81, 0.888);}
+
+.person
+border-radius: 1px 0 3px 4px;
+
+.person {
+    display: inline-block;
+    border: 1px solid #000; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    width: 10px; 
+    height: 10px;
+    
+  }
+  
+  .person img {
+    width: 50%; 
+    height: 50%;
+    object-fit: cover; 
+  }
+  
